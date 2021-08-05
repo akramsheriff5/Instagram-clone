@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './css/index.css';
+import Header from './components/header'
+import Story from './components/story'
+import Faker from 'faker'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+let user = []
+
+for (let i = 0; i < 7; i++) {
+      user.push({
+        id:Faker.datatype.uuid(),
+        name: Faker.internet.userName(),
+        avatar: Faker.internet.avatar(),
+      })
+}
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Story user = {user} />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
