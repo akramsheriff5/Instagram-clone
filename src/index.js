@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
 import Header from './components/header'
 import Story from './components/story'
 import Faker from 'faker'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/index.css';
 
 let user = []
 

@@ -34,7 +34,7 @@ for(let i = 0 ; i<5 ; i++){
 const story = (props) => { 
     const userProp = props.user
     const allStory = userProp.map((user)=>{ 
-                    return <div className="col text-center my-auto" key={user.id}>
+                    return <div className="col-sm text-center my-auto" key={user.id}>
                     <img src={user.avatar} className="border border-3 rounded-circle story-border image-set"  width="56%" height="56%" />
                     <p className="m-0">{user.name.substring(0 , 6)}</p>
                 </div>
@@ -42,10 +42,10 @@ const story = (props) => {
     return (
         <div>
           <div className="row mt-5 px-5 pt-5 sticky-top">
-            <div className="col-8 ">
+            <div className=" col-lg-8 col-xl-8 full-page ">
               <div className=" card ">
                   
-                <div className=" card-body row">
+                <div className=" card-body row ">
                     
                     {allStory}
                   
@@ -59,7 +59,7 @@ const story = (props) => {
               </div>
 
             </div>
-            <div className="col-4 sticky-top">
+            <div className="col-4 sticky-top user-suggesion">
               <div className="row">
                 <div className="col-sm my-auto text-center">
                 <img src={profile} className="border border-1 rounded-circle" width="55%" height="84%"/>

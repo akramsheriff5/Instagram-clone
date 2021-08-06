@@ -10,8 +10,8 @@ const suggesion = (props) => {
 
         </div>
         <div className="col-sm align-middle my-auto">
-        <p className="text-dark font-weight-bold m-0">{user.name}</p>
-        <p className="font-weight-light text-secondary">{user.surname}</p>
+        <p className="text-dark font-weight-bold m-0">{user.name.substring(0,13)}</p>
+        <p className="font-weight-light text-secondary">{user.surname.substring(0,13)}</p>
 
         </div>
         <div className="col-sm align-middle  my-auto">

@@ -7,17 +7,18 @@ import { BiMessageRoundedMinus } from "react-icons/bi";
 const header = () => {
     return (
             <div >
-                <nav className='navbar fixed-top navbar-white bg-white border border-bottom mb-5'>
-                    <div className="container">
-                        <a className="navbar-brand" href="#">
+               <div className='container'> 
+                <nav className='p-2 navbar fixed-top navbar-white bg-white border border-bottom mb-5 d-flex justify-content-between'>
+               
+                        <a className="navbar-brand text-center" href="#">
                         <img src={logo} alt="instagram" className="img-fluid" alt="logo"/>
                         </a>
 
-                        <form className="d-flex">
+                        <form className=" mx-auto search-fiter">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                         </form>
 
-                        <div>
+                        <div className="text-center">
                             <a className="navbar-brand h2 text-dark" href="#">
                             <TiHome size={30}/>
                             </a>
@@ -32,12 +33,14 @@ const header = () => {
                             </a>
                             
                             <a className="navbar-brand h2" href="#">
-                            <img src={profile} className="border border-1 rounded-circle" width="7%" height="10%" alt="profile"/>
+                            <img src={profile} className="border border-1 rounded-circle" width="7%" height="100%" alt="profile"/>
                             </a>
-                        </div>
+                        
                     </div>
 
                 </nav>
+
+               </div> 
             </div>
     );
 }
