@@ -19,10 +19,10 @@ const header = () => {
                         </form>
 
                         <div className="text-center">
-                            <a className="navbar-brand h2 text-dark" href="#">
+                            <a className="navbar-brand h2 text-dark" href="/">
                             <TiHome size={30}/>
                             </a>
-                            <a className="navbar-brand h2 text-dark" href="#">
+                            <a className="navbar-brand h2 text-dark" href="message">
                             <BiMessageRoundedMinus  size={30} />
                             </a>
                             <a className="navbar-brand h2 text-dark" href="#">

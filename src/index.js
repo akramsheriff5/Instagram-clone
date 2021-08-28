@@ -1,20 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header'
-import Story from './components/story'
-import Faker from 'faker'
+import Router from './components/router'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/index.css';
 
-let user = []
-
-for (let i = 0; i < 7; i++) {
-      user.push({
-        id:Faker.datatype.uuid(),
-        name: Faker.internet.userName(),
-        avatar: Faker.internet.avatar(),
-      })
-}
 
 
 
@@ -22,7 +12,7 @@ for (let i = 0; i < 7; i++) {
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <Story user = {user} />
+    <Router  />
   </React.StrictMode>,
   document.getElementById('root')
 );
